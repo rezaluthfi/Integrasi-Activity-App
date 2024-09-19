@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg_dark" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/img_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/register_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/white_60"
+            android:text="@string/register_desc" />
+
+        <EditText
+            android:id="@+id/et_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/edittext_hint_fullname"
+            android:textColorHint="@color/white_60"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="16dp"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/edittext_hint_email"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="16dp"
+            android:textColorHint="@color/white_60"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="16dp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/edittext_hint_phone"
+            android:drawableLeft="@drawable/baseline_call_24"
+            android:drawablePadding="16dp"
+            android:textColorHint="@color/white_60"
+            android:inputType="phone"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp" >
+
+            <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:popupBackground="@drawable/bg_spinner_item"
+                android:textColorHint="@color/white_60"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="16dp" />
+
+            <!-- Date Picker for Birthday -->
+            <EditText
+                android:id="@+id/et_dob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:hint="@string/edittext_hint_birthday"
+                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:drawablePadding="16dp"
+                android:padding="16dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_60"
+                android:layout_marginHorizontal="16dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/edittext_hint_password"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="16dp"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:textColorHint="@color/white_60"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="16dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/bg_btn_primary"
+            android:text="Daftar"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_60"
+                android:textSize="14sp"
+                android:text="@string/tv_already_have_account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white_60"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="@string/tv_login" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
